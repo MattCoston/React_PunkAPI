@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Beer.css';
 
 class Beer extends Component {
     constructor(props) {
@@ -8,9 +9,10 @@ class Beer extends Component {
         return (
             <div>
                 <h1>{this.props.name}</h1>
-                <h3>{this.props.tagline}</h3>
-                <h6>{this.props.brewers_tips}</h6>
-                <img src={this.props.image} />
+                <img src={this.props.image} className="beer__image" />
+                <br></br>
+                <span className="beer__tagline">{this.props.tagline}</span>
+                <h6>{this.props.tips}</h6>
             </div>
         );
     }
