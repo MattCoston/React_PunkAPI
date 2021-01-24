@@ -7,12 +7,15 @@ class Beer extends Component {
     }
     render() {
         return (
-            <div>
-                <h1>{this.props.name}</h1>
-                <img src={this.props.image} className="beer__image" />
-                <br></br>
-                <span className="beer__tagline">{this.props.tagline}</span>
-                <h6>{this.props.tips}</h6>
+            <div className="beers">
+                <div className="beer__style">
+                    <h1>{this.props.name}</h1>
+                    <img src={this.props.image} className="beer__image" />
+                    <input className="checkbox" type="checkbox" value="liked" />
+                    Add to favorites
+                    <span className="beer__tagline">{this.props.tagline}</span>
+                    <h5>{this.props.tips}</h5>
+                </div>
             </div>
         );
     }

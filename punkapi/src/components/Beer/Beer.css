@@ -1,8 +1,27 @@
+.beers {
+    width: 50vh;
+    height: 60vh;
+}
+
 .beer__image {
     height: 40vh;
     width: 110px;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    justify-content: center;
 }
-.beer__taglin {
+.beer__tagline {
     display: block;
+}
+
+.beer__style {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.beer__style:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.checkbox {
+    padding-left: 50px;
 }
